@@ -1,0 +1,74 @@
+.App {
+  height: 100vh;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-child {
+  margin: 5px;
+  text-align: center;
+}
+
+.navbar-child a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: #f2f2f2;
+  line-height: 40px;
+  border-top: 1px solid #e4e4e4;
+}
+
+#google-logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBox-item {
+}
+
+.searchButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBox-button {
+  text-align: center;
+  margin: 5px;
+}
+
+.footer-container-left {
+  display: block;
+  float: left;
+}
+
+.footer-container-right {
+  display: block;
+  float: right;
+  margin-right: 30px;
+}
+
+.footer-child a {
+  color: #5f6368;
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  padding-left: 27px;
+  font-family: sans-serif;
+}
