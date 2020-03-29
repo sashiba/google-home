@@ -1,22 +1,20 @@
 .App {
-  height: 100vh;
+  height: 99vh;
   position: relative;
 }
+
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 40px;
+  margin-top: 5px;
 }
 
 .navbar-child {
-  height: 24px;
-  margin-top: 15px;
   text-align: right;
   padding-right: 27px;
   padding-left: 0;
-}
-
-.navbar-child a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87);
   font-family: sans-serif;
@@ -26,6 +24,7 @@
 #footer {
   position: absolute;
   bottom: 0;
+  height: 40px;
   width: 100%;
   margin-bottom: 3px;
   background-color: #f2f2f2;
@@ -56,7 +55,7 @@
 }
 
 #main {
-  max-height: 60vh;
+  max-height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +85,39 @@
   /* display: flex; */
   margin-left: 20px;
   align-items: stretch;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: rgb(45, 45, 45);
+  text-align: center;
+  padding: 5px;
+  color: white;
+  width: 100px;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+}
+
+.tooltip .tooltip-text::after {
+  content: ' ';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(45, 45, 45) transparent transparent transparent;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  transform: rotate(180deg);
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 #searchBox-input {

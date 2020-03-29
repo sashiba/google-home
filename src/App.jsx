@@ -5,28 +5,26 @@ function App() {
   return (
     <div className="App">
       <div className="navbar">
-        <div className="navbar-child">
-          <a href="#">Gmail</a>
-        </div>
-        <div className="navbar-child">
-          <a href="#">Images</a>
-        </div>
-        <div className="navbar-child">
-          <img
-            src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png"
-            alt="Applications icon"
-            width="24px"
-            height="24px"
-          />
-        </div>
-        <div className="navbar-child">
-          <img
-            src="https://cdn1.iconfinder.com/data/icons/mix-color-4/502/Untitled-1-512.png"
-            alt="profile icon"
-            width="30px"
-            height="30px"
-          />
-        </div>
+        <a href="#" className="navbar-child">
+          Gmail
+        </a>
+        <a href="#" className="navbar-child">
+          Images
+        </a>
+        <img
+          className="navbar-child"
+          src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png"
+          alt="Applications icon"
+          width="24px"
+          height="24px"
+        />
+        <img
+          className="navbar-child"
+          src="https://cdn1.iconfinder.com/data/icons/mix-color-4/502/Untitled-1-512.png"
+          alt="profile icon"
+          width="30px"
+          height="30px"
+        />
       </div>
       <div id="main">
         <img
@@ -51,12 +49,14 @@ function App() {
               height="24px"
               width="24px"
             />
-            <img
-              id="searchBox-mic"
-              className="searchBox-item"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdX8ck7y7RlW8jUex4EiAMF-aHNk5tJk-4U_w02Z6GFCEkEM&s"
-              alt="mic"
-            />
+            <div className="tooltip searchBox-item">
+              <img
+                id="searchBox-mic"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdX8ck7y7RlW8jUex4EiAMF-aHNk5tJk-4U_w02Z6GFCEkEM&s"
+                alt="mic"
+              />
+              <span className="tooltip-text">Voice search</span>
+            </div>
           </div>
 
           <div className="searchButtons">
