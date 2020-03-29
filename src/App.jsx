@@ -15,8 +15,8 @@ function App() {
           <img
             src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png"
             alt="Applications icon"
-            width="30px"
-            height="30px"
+            width="24px"
+            height="24px"
           />
         </div>
         <div className="navbar-child">
