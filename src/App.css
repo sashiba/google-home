@@ -56,7 +56,7 @@
 }
 
 #main {
-  max-height: 50vh;
+  max-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +83,25 @@
 }
 
 .searchBox-item {
-  /* align-self: flex-end */
+  /* display: flex; */
+  margin-left: 20px;
+  align-items: stretch;
+}
+
+#searchBox-input {
+  font: 16px sans-serif;
+  flex: 100%;
+  line-height: 34px;
+  height: 34px;
+  margin-left: 10px;
+  border: none;
+  outline-width: 0;
+}
+
+#searchBox-mic {
+  height: 24px;
+  width: 20px;
+  margin-right: 20px;
 }
 
 .searchButtons {

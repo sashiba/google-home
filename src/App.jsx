@@ -40,23 +40,22 @@ function App() {
               className="searchBox-item"
               src="https://cdn4.iconfinder.com/data/icons/user-interface-175/32/UIF-121-512.png"
               alt="lens"
-              height="20px"
-              width="20px"
+              height="15px"
+              width="15px"
             />
-            <input type="text" className="searchBox-item" />
+            <input id="searchBox-input" type="text" className="searchBox-item" />
             <img
               className="searchBox-item"
               src="https://lh3.googleusercontent.com/proxy/01BzJclrspOQC-RWZ5ub4O-0-S9sjPGOZUxkJEHkeAsHgrq_mZkRFMXzUdVr5Bc6WoU4q0CoEANXZHDKXUuCO9OVYxBXBSxW6IFfvBBBYl8KfBU-ZgZ9x8c"
               alt="keyboard"
-              height="30px"
-              width="30px"
+              height="24px"
+              width="24px"
             />
             <img
+              id="searchBox-mic"
               className="searchBox-item"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdX8ck7y7RlW8jUex4EiAMF-aHNk5tJk-4U_w02Z6GFCEkEM&s"
               alt="mic"
-              height="40px"
-              width="30px"
             />
           </div>
 
